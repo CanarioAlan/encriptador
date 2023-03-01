@@ -1,0 +1,160 @@
+:root {
+  --CBlanco: #ffffff;
+  --CNegro: #000000;
+  --CGris: #a7a5a5c0;
+  --CRojo: #961414;
+}
+body {
+  background-image: url(img/cuadrados.jpeg);
+  /* background-repeat: repeat; */
+}
+
+.header {
+  margin-top: 50px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--CRojo);
+  filter: drop-shadow(0 0 0.75rem crimson);
+  font-size: 50px;
+}
+main {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  main {
+    justify-content: space-evenly;
+  }
+}
+.text-area {
+  border: none;
+  border-radius: 10px 30px;
+  padding: 2px;
+  text-transform: lowercase;
+  background-color: var(--CGris);
+  color: var(--CRojo);
+  font-size: 30px;
+  font-weight: bold;
+}
+::placeholder {
+  color: var(--CRojo);
+  text-align: center;
+  line-height: 350px;
+  text-transform: uppercase;
+}
+.text-area:focus {
+  outline: none;
+}
+
+.mensaje {
+  background-color: var(--CGris);
+  background-image: url(img/Muñeco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 10px 35px;
+  color: var(--CRojo);
+  font-size: 30px;
+  margin-top: 30px;
+}
+.mensaje:focus {
+  outline: none;
+}
+@media (min-width: 769px) {
+  .mensaje {
+    margin: 0;
+    width: 500px;
+    height: 400px;
+  }
+  .text-area {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    text-align: center;
+  }
+  .text-area {
+    width: 250px;
+    height: 400px;
+  }
+  ::placeholder {
+    font-size: 15px;
+  }
+  .mensaje {
+    width: 250px;
+  }
+}
+h2 {
+  color: var(--CBlanco);
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 769px) {
+  h2 {
+    margin-left: 50px;
+  }
+}
+.btn {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+  justify-content: space-around;
+}
+.btn-encrip {
+  background-color: var(--CGris);
+  border: 1px solid var(--CRojo);
+  border-radius: 25px;
+  color: var(--CBlanco);
+  font-size: 25px;
+  cursor: pointer;
+  height: 60px;
+  width: 230px;
+}
+
+.btn-desencrip {
+  background: var(--CGris);
+  border: 1px solid var(--CRojo);
+  border-radius: 25px;
+  color: var(--CBlanco);
+  font-size: 25px;
+  cursor: pointer;
+  height: 60px;
+  width: 230px;
+}
+@media (max-width: 480px) {
+  .btn-desencrip {
+    width: 150px;
+  }
+  .btn-encrip {
+    width: 150px;
+  }
+}
+.copiar {
+  border: 1px solid var(--CRojo);
+  border-radius: 24px;
+  background-color: var(--CGris);
+  color: var(--CBlanco);
+  cursor: pointer;
+  height: 60px;
+  margin-top: 20px;
+  margin-left: 70px;
+  position: absolute;
+  width: 230px;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.img-footer {
+  width: 80px;
+  margin-top: 100px;
+}
